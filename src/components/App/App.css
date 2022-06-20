@@ -1,0 +1,48 @@
+.App {
+  padding-top: 36px;
+  width: 100%;
+  min-width: 800px;
+  overflow: hidden;
+}
+
+.App__title {
+  font-family: 'Exo2.0';
+  width: 100%;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 1px #000000;
+}
+
+
+.products__list {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr/ repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 80px;
+  padding: 40px 0;
+}
+
+
+@media (max-width:1150px) {
+
+  .products__list {
+    grid-template: repeat(2, 1fr)/ repeat(2, auto);
+  }
+
+  .product-wrapper:nth-child(1) {
+    grid-column: 2 span;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:1150px) {
+  .products__list {
+    column-gap: 80px;
+  }
+}

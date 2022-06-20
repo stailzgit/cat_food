@@ -1,0 +1,33 @@
+body {
+  line-height: 1;
+  min-height: 100vh;
+  background: url('../assets/images/background.png') repeat center / cover;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --base-font: 'Trebuchet MS', 'Lucida Sans Unicode';
+  --color-primary: #1698d9;
+  --color-selected: #e52e7a;
+  --color-disabled-dark: #B3B3B3;
+  --color-disabled-light: #F2F2F2;
+}
+
+.container {
+  box-sizing: content-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+}
+
+@font-face {
+  src: url('../assets/fonts/Exo2.0-Thin.otf');
+  font-family: "Exo 2.0- Thin";
+}
+
+@font-face {
+  src: url('../assets/fonts/Trebuchet MS.ttf');
+  font-family: "Trebuchet MS";
+}
