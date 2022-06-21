@@ -58,8 +58,10 @@ const Product = (props) => {
         <div className="product__consist">{consist}</div>
         <div className="product__count">{count} порций</div>
 
-        {bonuses.map((bonus) => (
-          <div className="product__bonus">{bonus}</div>
+        {bonuses.map((bonus, index) => (
+          <div className="product__bonus" key={index}>
+            {bonus}
+          </div>
         ))}
 
         <div className={`product__weight ${status}`}>
